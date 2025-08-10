@@ -1,0 +1,111 @@
+Q1: Python kya hai?
+A: Python ek high-level, interpreted, general-purpose programming language hai,
+ jo Guido van Rossum ne 1991 mein release ki thi. Ye easy syntax aur readability ke liye famous hai.
+
+
+
+Q2: Python interpreted language kyun kehlata hai?
+A: Kyunki Python ka code directly interpreter ke through execute hota hai,
+ bina machine code me pre-compile kiye. Interpreter line-by-line code read karta hai.
+
+
+
+Q3: Python me `.py` file run hone ke baad ka process kya hota hai?
+A: Steps:
+
+1. Source Code (.py) likha jata hai.
+2. Python interpreter code ko parse karta hai.
+3. `.pyc` file (bytecode) me convert karta hai.
+4. Python Virtual Machine (PVM) bytecode ko execute karta hai.
+
+Q4: Python ka internal working flow explain karo.
+A:
+
+* Step 1: Lexical Analysis → Code ko tokens me todta hai.
+* Step 2: Parsing → Tokens ko Abstract Syntax Tree (AST) me convert karta hai.
+* Step 3: Compilation → AST ko bytecode (.pyc) me convert karta hai.
+* Step 4: Execution → PVM bytecode execute karta hai.
+
+
+
+Q5: `.pyc` file ka purpose kya hai?
+A: `.pyc` (Python Compiled) file bytecode store karti hai taake agle run me code fast execute ho,
+kyunki dobara compile nahi karna padta.
+
+
+
+Q6: PVM kya hota hai?
+A: PVM (Python Virtual Machine) ek runtime engine hai jo bytecode execute karta hai.
+ Ye Python ka "heart" hai.
+
+
+
+Q7: Python dynamically typed language ka matlab
+Matlab: Python me tum variable banate waqt type declare nahi karte.
+Type ka decision runtime pe hota hai.
+
+Example:
+
+
+x = 5       # abhi x integer hai
+x = "Hello" # abhi x string ban gaya
+Yani tum ek hi variable ko alag type ka value de sakte ho, Python khud type samajh lega.
+C/C++ me tumhe pehle type fix karni padti hai (int x;).
+
+Q8: Interpreter vs Compiler (Python ke context me)
+Python ek interpreted language hai, lekin internally compiler + interpreter dono ka mix kaam karta hai.
+
+Process:
+
+Compiler part → Tumhara .py code ko bytecode (.pyc) me convert karta hai.
+
+Interpreter part → Ye bytecode ko Python Virtual Machine (PVM) run karta hai.
+
+Difference:
+
+Compiler → Ek baar poora code machine code me convert karta hai, phir run karta hai.
+ (Fast execution, but compile time lagta hai)
+
+Interpreter → Code ko line-by-line run karta hai. (Easy debugging, but slow execution)
+
+Q9: Bytecode platform-independent kyun hota hai
+Reason: Bytecode ek low-level instruction hota hai jo kisi specific OS ya hardware pe depend nahi karta.
+
+Tum Windows pe code likho
+
+Bytecode banega
+
+Same bytecode Mac, Linux, ya Windows ke PVM pe run hoga — koi change nahi chahiye.
+
+Example:
+
+
+print("Hello World")
+Ye Python interpreter har platform pe ek hi tarah se execute karega, kyunki PVM har OS ka apna version hota hai.
+
+Q10: Garbage Collector ka role
+Python automatically memory free karta hai jo ab use nahi ho rahi.
+
+Kaise kaam karta hai:
+Python reference counting karta hai — har object ka kitne variables usko refer kar rahe hain.
+
+Jab reference count 0 ho jata hai → object memory se delete ho jata hai.
+
+Agar cyclic reference ho (object A → B aur B → A), to cyclic garbage collector detect karke free karta hai.
+
+Example:
+
+
+a = [1, 2, 3]
+b = a        # reference count = 2
+del a        # reference count = 1
+del b        # reference count = 0 → memory free
+
+
+
+
+
+
+
+
+
