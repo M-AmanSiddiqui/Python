@@ -193,13 +193,219 @@
     
 # Ans:10
 
-order_size = "Medium"
-extra_shot = True
+# order_size = "Medium"
+# extra_shot = True
 
-if extra_shot:
-    coffee = order_size + " Coffee with an extra shot"
+# if extra_shot:
+#     coffee = order_size + " Coffee with an extra shot"
 
-else:
-    coffee = order_size + " Coffee"
+# else:
+#     coffee = order_size + " Coffee"
 
-print("Order: ",coffee)
+# print("Order: ",coffee) Output: Order:Medium Coffee with an extra shot
+
+
+
+
+# Q11.  Pssword Strength Checker
+#       Check if a password is "Weak", "Medium", or "Strong". 
+# Criteria: < 6 chars (Weak), 6-10 chars(Medium), >10 chars(Strong)
+    
+# Ans:11
+
+# password = input("Enter Your Password: ")
+
+# if len(password) < 6:
+#     strength = "Weak"
+
+# elif len(password) <= 10:
+#     strength = "Medium"
+
+# else:
+#     strength = "Strong"
+
+# print("Password Strength is: ",strength)
+
+
+
+
+
+
+# Q12.  Leap Year Checker
+#       Determine if a year is a leap year.(Leap years are divisible by 4, but not by 100 unless also divisible by 400).
+    
+# Ans:12
+
+# year = 2024
+
+# if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+#     print(year, " is a leap year") Output: 2024  is a leap yea
+
+# else:
+#     print(year , " is Not a leap year")   
+
+
+
+
+# Q13.  Pet Food Recommendation
+#       Recommend a type of pet food based on the pet's species age age. 
+# (e.g., Dog: <2 years - Puppy food, Cat: >5 years - Senior cat food).
+    
+# Ans:13
+
+# dog1 = int(input("Whats Your Dog Age: "))
+# cat1 = int(input("Whats Your Cat Age: "))
+
+# if dog1 < 2:
+#     dogfood = "Puppy Food"
+
+# elif dog1 >= 2:
+#     dogfood = "Adult Food"
+    
+# if cat1 > 5:
+#     catfood= "Senior Cat Food"
+
+# elif cat1 < 5:
+#     catfood= "Junior Cat Food"
+
+# print("Your Dog Food is: ",dogfood)
+# print("Your Cat Food is: ",catfood)
+
+
+
+
+# Q14.   Counting Positive Numbers
+#        Problem: Given a list of numbers, count how many are positive.  
+#        numbers = [1, -2, 3, -4, 5, 6, -7, -8, 9, 10]
+
+
+# Ans:14
+
+# numbers = [1, -2, 3, -4, 5, 6, -7, -8, 9, 10]
+# positive_number_count = 0
+# for num in numbers:
+#     if num > 0:
+#         positive_number_count += 1
+
+# print("Final count of Positive Number is: ",positive_number_count) //Output: 6
+
+
+
+
+# Q15.  Sum of Even Numbers
+#       Problem: Calculate the sum of even numbers up to a given number n.
+
+# Ans:15
+
+# n = int(input("Enter Number: "))
+# sum_even = 0 
+# for i in range (1, n+1):
+#     if i%2 == 0:
+#         sum_even += 1
+# print("Sum of even number is: ," ,sum_even)
+
+
+
+# Q16.  Multiplication Table Printer
+#       Problem: Print the multiplication table for a given number up to 10, but skip the fifth iteration.
+
+# Ans:16
+
+# number = int(input("Enter Number: "))
+
+# for i in range(1, 11):
+#     if i == 5:
+#         continue
+#     print(number, 'x' , i , '=' , number * i)
+
+
+
+
+# Q17.  Reverse a String
+#       Problem: Reverse a string using a loop.
+
+# Ans:17
+
+# input_str = "Python"
+# reversed_str = ""
+
+# for char in  input_str:
+#     reversed_str = char + reversed_str
+
+# print(reversed_str) Output: nohtyP
+
+
+
+# Q18.  Find the First Non-Repeated Character
+#       Problem: Given a string, find the first non-repeated character
+
+# Ans:18
+
+
+
+
+
+
+#Q19.  Factorial Calculator
+#      Problem: Compute the factorial of a number using a while loop.
+
+# Ans:19
+
+
+
+
+
+
+
+
+# Q20.   Validate Input
+#        Problem: Keep asking the user for input until they enter a number between 1 and 10.
+
+# Ans:20
+
+
+
+
+
+
+
+
+
+
+
+
+# Q21.  Prime Number Checker
+#       Problem: Check if a number is prime.
+
+# Ans:21
+
+
+
+# Q22. List Uniqueness Checker
+#      Problem: Check if all elements in a list are unique. If a duplicate is found, exit the loop and print the duplicate.
+#      items = ["apple", "banana", "orange", "apple", "mango"]
+# Ans:22
+
+
+
+
+# Q23.  Exponential Backoff
+#       Problem: Implement an exponential backoff strategy that doubles the wait time between retries,
+#       starting from 1 second, but stops after 5 retries.
+
+# Ans:23  
+
+
+
+
+
+
+
+
+
+
+
+# Q18.  Find the First Non-Repeated Character
+#       Problem: Given a string, find the first non-repeated character
+
+# Ans:18
