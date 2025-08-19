@@ -341,8 +341,13 @@
 
 # Ans:18
 
+# input_str = "teeter"
 
-
+# for char in input_str:
+   
+#     if input_str.count(char) == 1:
+#         print("Result is :" , char) Output: Result is : r
+#         break
 
 
 
@@ -350,6 +355,14 @@
 #      Problem: Compute the factorial of a number using a while loop.
 
 # Ans:19
+
+number = int(input("Enter a Number: "))
+factorial = 1
+
+while number > 0:
+    factorial = factorial * number
+    number = number - 1
+    print("factorial: ",factorial) 
 
 
 
