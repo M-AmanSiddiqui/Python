@@ -356,13 +356,13 @@
 
 # Ans:19
 
-number = int(input("Enter a Number: "))
-factorial = 1
+# number = int(input("Enter a Number: "))
+# factorial = 1
 
-while number > 0:
-    factorial = factorial * number
-    number = number - 1
-    print("factorial: ",factorial) 
+# while number > 0:
+#     factorial = factorial * number
+#     number = number - 1
+#     print("factorial: ",factorial) 
 
 
 
@@ -376,12 +376,13 @@ while number > 0:
 
 # Ans:20
 
-
-
-
-
-
-
+# while True:
+#     number = int(input("Enter value b/w 1 and 10: "))
+#     if 1 <= number <= 10:
+#         print("Thanks")
+#         break
+#     else:
+#         print("Invalid Number")
 
 
 
@@ -393,11 +394,32 @@ while number > 0:
 # Ans:21
 
 
+# number = 29
+# is_prime = True
+
+# if number > 1:
+#     for i in range(2, number):
+#         if (number % i) == 0:
+#             is_prime = False
+#             break
+
+# print(is_prime)
+
+
 
 # Q22. List Uniqueness Checker
 #      Problem: Check if all elements in a list are unique. If a duplicate is found, exit the loop and print the duplicate.
 #      items = ["apple", "banana", "orange", "apple", "mango"]
 # Ans:22
+# items = ["apple", "banana", "orange", "apple", "mango"]
+
+# unique_item = set()
+
+# for item in items:
+#     if item in unique_item:
+#         print("Duplicate" , item)
+#         break
+#     unique_item.add(item)
 
 
 
@@ -408,17 +430,15 @@ while number > 0:
 
 # Ans:23  
 
+# import time
 
+# wait_time = 1
+# max_retries = 5
+# attemps = 0
 
+# while attemps < max_retries:
+#     print("Attempt", attemps  + 1,  "wait_time" , wait_time )
+#     time.sleep(wait_time)
+#     wait_time *= 2 
+#     attemps += 1
 
-
-
-
-
-
-
-
-# Q18.  Find the First Non-Repeated Character
-#       Problem: Given a string, find the first non-repeated character
-
-# Ans:18
