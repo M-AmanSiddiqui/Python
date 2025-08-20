@@ -1,7 +1,6 @@
 # Q1. Write a Python program to create a class called "Person" with properties for 
 # name, age and country. Include a method to display the person's details. Create 
 # two instances of the 'Person' class and display their details.
-
 # Ans:1
 # class Person:
 #     def __init__ (self , name , age , country):
@@ -14,12 +13,11 @@
 # print(Aman.display_info()) # Output: My name is Aman. I am 18 years old. I live in Pakistan
          
 
+
 #  Q2. Write a Python program to create a class called 'Rectangle' with properties for 
 # width and height. Include two methods to calculate rectangle area and perimeter. 
 # Create an instance of the 'Rectangle' class and calculate its area and perimeter. 
-
 # Ans:2
-
 # class Rectangle:
 #     def __init__(self,width,height):
 #         self.width = width
@@ -37,14 +35,13 @@
 # print(Rectangular.cal_area()) # Output:54
 
 
+
 # Q3. Write a Python program that creates a class called 'Vehicle' with properties for 
 # make, model, and year. Include a method to display vehicle details. Create a 
 # subclass called 'Car' that inherits from the 'Vehicle' class and includes an 
 # additional property for the number of doors. Override the display method to 
 # include the number of doors. 
-
 # Ans:3
-
 # class Vehicle:
 #     def __init__(self,make, model, year):
 #         self.make = make
@@ -65,13 +62,12 @@
 # print(my_car.display_info())  # Output:the make is Toyota the model is Corolla the year is 2020 Number of doors 4
 
 
+
 # Q4. Write a Python program that creates a class called "BankAccount" with 
 # properties for account number and balance. Include methods to deposit and 
 # withdraw money from the account. Create some instances of the "BankAccount" 
 # class, deposit some money, and withdraw a portion of it. 
-
 # Ans:4
-
 # class BankAccount:
 #     def __init__(self,  acc_number,balance):
 #         self.acc_number = acc_number
@@ -92,7 +88,6 @@
 
 # Q5. Age Group Categorization 
 # Classify a person's age group: child (<13), Teenager (13-19), Adult (20-59), Senior(60+). 
-    
 # Ans:5
 # age = int(input("Enter our Age:"))
 # if age < 13:
@@ -107,9 +102,10 @@
 # else:
 #     print("Senior")   Output:Senior
 
+
+
 # Q6.  Movie ticket are priced based on age: $12 for Adult(18 or over). $8 for children.
 #  Everyone gets a 2$ discount on Wednesday.
-    
 # Ans:6
 # age = int(input("Enter Your age: "))
 # day = "Wednesday"
@@ -122,7 +118,6 @@
 
 # Q7.  Grade Calcuator
 #     Assign a letter grade based on a student's score: A(90-100), B(80-89), C(70-70), D(60-69),F(below 60)
-    
 # Ans:7
 # score = int(input("Enter Your Marks: "))
 
@@ -147,10 +142,10 @@
 # print("Grade: ",grade)
 
 
+
 # Q8.  Weather Activity Suggestion
 #      Suggest an activity based on the weather
 #  (e.g., Sunny - Go for a walk, Rainy - Read a book, Snowy - Build a snowman). 
-    
 # Ans:8
   
 # weather = "Sunny"
@@ -171,9 +166,7 @@
 
 # Q9.  Transportation a Mode of Selection
 #      Transportation a Mode of Selection base on the distance (e.g., <3 km:Walk, 3-15 km:Bike, >15km: Car)
-    
 # Ans:9
-  
 # distance = int(input("Enter Your Distance: "))
 
 # if distance < 3:
@@ -188,9 +181,9 @@
 # print("AI recommends you the transport of: ",transport)
 
 
+
 # Q10.  Coffee Customization
 #       Customize a coffee order: "Small", "Medium",  or "Large" with an option for "Extra shot" pf espresso.
-    
 # Ans:10
 
 # order_size = "Medium"
@@ -206,11 +199,9 @@
 
 
 
-
 # Q11.  Pssword Strength Checker
 #       Check if a password is "Weak", "Medium", or "Strong". 
 # Criteria: < 6 chars (Weak), 6-10 chars(Medium), >10 chars(Strong)
-    
 # Ans:11
 
 # password = input("Enter Your Password: ")
@@ -228,14 +219,9 @@
 
 
 
-
-
-
 # Q12.  Leap Year Checker
 #       Determine if a year is a leap year.(Leap years are divisible by 4, but not by 100 unless also divisible by 400).
-    
 # Ans:12
-
 # year = 2024
 
 # if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
@@ -246,11 +232,9 @@
 
 
 
-
 # Q13.  Pet Food Recommendation
 #       Recommend a type of pet food based on the pet's species age age. 
 # (e.g., Dog: <2 years - Puppy food, Cat: >5 years - Senior cat food).
-    
 # Ans:13
 
 # dog1 = int(input("Whats Your Dog Age: "))
@@ -273,14 +257,10 @@
 
 
 
-
 # Q14.   Counting Positive Numbers
 #        Problem: Given a list of numbers, count how many are positive.  
 #        numbers = [1, -2, 3, -4, 5, 6, -7, -8, 9, 10]
-
-
 # Ans:14
-
 # numbers = [1, -2, 3, -4, 5, 6, -7, -8, 9, 10]
 # positive_number_count = 0
 # for num in numbers:
@@ -291,12 +271,9 @@
 
 
 
-
 # Q15.  Sum of Even Numbers
 #       Problem: Calculate the sum of even numbers up to a given number n.
-
 # Ans:15
-
 # n = int(input("Enter Number: "))
 # sum_even = 0 
 # for i in range (1, n+1):
@@ -308,9 +285,7 @@
 
 # Q16.  Multiplication Table Printer
 #       Problem: Print the multiplication table for a given number up to 10, but skip the fifth iteration.
-
 # Ans:16
-
 # number = int(input("Enter Number: "))
 
 # for i in range(1, 11):
@@ -320,12 +295,9 @@
 
 
 
-
 # Q17.  Reverse a String
 #       Problem: Reverse a string using a loop.
-
 # Ans:17
-
 # input_str = "Python"
 # reversed_str = ""
 
@@ -338,9 +310,7 @@
 
 # Q18.  Find the First Non-Repeated Character
 #       Problem: Given a string, find the first non-repeated character
-
 # Ans:18
-
 # input_str = "teeter"
 
 # for char in input_str:
@@ -353,9 +323,7 @@
 
 #Q19.  Factorial Calculator
 #      Problem: Compute the factorial of a number using a while loop.
-
 # Ans:19
-
 # number = int(input("Enter a Number: "))
 # factorial = 1
 
@@ -366,16 +334,9 @@
 
 
 
-
-
-
-
-
 # Q20.   Validate Input
 #        Problem: Keep asking the user for input until they enter a number between 1 and 10.
-
 # Ans:20
-
 # while True:
 #     number = int(input("Enter value b/w 1 and 10: "))
 #     if 1 <= number <= 10:
@@ -386,14 +347,9 @@
 
 
 
-
-
 # Q21.  Prime Number Checker
 #       Problem: Check if a number is prime.
-
 # Ans:21
-
-
 # number = 29
 # is_prime = True
 
@@ -423,13 +379,10 @@
 
 
 
-
 # Q23.  Exponential Backoff
 #       Problem: Implement an exponential backoff strategy that doubles the wait time between retries,
 #       starting from 1 second, but stops after 5 retries.
-
 # Ans:23  
-
 # import time
 
 # wait_time = 1
@@ -442,3 +395,104 @@
 #     wait_time *= 2 
 #     attemps += 1
 
+
+
+# Q24. Basic Function Syntax
+# Problem: Write a function to calculate and return the square of a number.
+# Ans:24
+# def square(number):
+#     return (number ** 2)
+# print(square(4)) Output: 16
+
+
+
+# Q25. Function with Multiple Parameters
+# Problem: Create a function that takes two numbers as parameters and returns their sum.
+# Ans:25
+# def add(a , b):
+#     return a + b
+# print(add(4,6)) Output: 10
+
+
+
+# Q26. Polymorphism in Functions
+# Problem: Write a function multiply that multiplies two numbers, but can also accept and multiply strings.
+# Ans:26
+# def multiply(p1 , p2):
+#     return p1 * p2
+# print(multiply(5 , 5)) 
+# print(multiply(5 , 5)) Output: 25
+
+
+
+# Q27. Function Returning Multiple Values
+# Problem: Create a function that returns both the area and circumference of a circle given its radius.
+# Ans:27
+# import math
+# def circl(radius):
+#      area = math.pi * radius ** 2
+#      circumference = 2 * math.pi * radius
+#      return area, circumference
+# a , c = circl(3)
+# print("Area:" , a , "Circumference:",c)  Output: Area: 28.274333882308138 Circumference: 18.84955592153876
+
+
+
+# Q28. Default Parameter Value
+# Problem: Write a function that greets a user. If no name is provided, it should greet with a default name.
+# Ans:28
+# def greet(name = "user"):
+#     return "Hello, " + name + " !"
+# print(greet()) Output: Hello, user !
+
+
+
+# Q29. Lambda Function
+# Problem: Create a lambda function to compute the cube of a number.
+# Ans:29
+# cube = lambda x: x ** 3
+# print(cube(3)) Output: 27
+
+
+
+# Q30. Function with *args
+# Problem: Write a function that takes variable number of arguments and returns their sum.
+# Ans:30
+# def sum_all(*args):
+#     return sum(args)
+# print(sum_all(1, 2))  Output: 3
+# print(sum_all(1, 2, 3, 4 , 5)) Output: 15
+# print(sum_all(1, 2, 3, 4 , 5, 6, 7 , 8)) Output: 36
+
+
+
+# Q31. Function with **kwargs
+# Problem: Create a function that accepts any number of keyword arguments and prints them in the format key: value.
+# Ans:31
+# def kwargs(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}:  {value}")
+# kwargs(name="Aman", F_Name="Waqar" ) 
+# kwargs(name="Azan", F_Name="Waqar" ) 
+
+
+
+# Q32. Generator Function with yield
+# Problem: Write a generator function that yields even numbers up to a specified limit.
+# Ans:32
+# def even_generator(limit):
+#     for i in range(2, limit + 1, 2):
+#         yield i
+# for num in even_generator(10):
+#     print(num)
+
+
+
+# Q33. Recursive Function
+# Problem: Create a recursive function to calculate the factorial of a number.
+# Ans:33
+# def factorial(n):
+#     if n == 0: 
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
