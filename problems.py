@@ -502,21 +502,57 @@
 # Q34. Basic Class and Object
 # Problem: Create a Car class with attributes like brand and model. Then create an instance of this class.
 # Ans:34
-class Car:
-    brand = None
-    model = None
-my_car = Car()
-print(my_car)
+# class Car:
+#     def __init__(self,brand, model):
+        
+#         self.brand = brand
+#         self.model = model     
+
+# my_car = Car("Toyota","Corrola")
+# print(my_car.brand)
+# print(my_car.model)
+
 
 
 # Q35. Class Method and Self
 # Problem: Add a method to the Car class that displays the full name of the car (brand and model).
 # Ans:35
+# class Car:
+#     def __init__(self,brand, model):
+        
+#         self.brand = brand
+#         self.model = model
+
+#     def fullName(self):
+#         return f"{self.brand} {self.model}"
+     
+
+# my_car = Car("Toyota","Corrola")
+# print(my_car.brand)
+# print(my_car.model)
+# print(my_car.fullName())
+
 
 
 # Q36. Inheritance
 # Problem: Create an ElectricCar class that inherits from the Car class and has an additional attribute battery_size.
 # Ans:36
+# class Car:
+#     def __init__(self,brand, model):
+        
+#         self.brand = brand
+#         self.model = model
+
+#     def fullName(self):
+#         return f"{self.brand} {self.model}"
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand , model)
+#         self.battery_size = battery_size
+        
+# my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+# print(my_tesla.fullName(),my_tesla.battery_size)
 
 
 
@@ -524,37 +560,198 @@ print(my_car)
 # Problem: Modify the Car class to encapsulate the brand attribute, making it private,
 #  and provide a getter method for it.
 # Ans:37
+# class Car:
+#     def __init__(self,brand, model):
+        
+#         self.__brand = brand
+#         self.model = model
+    
+#     def get_brand(self):
+#         return self.__brand + " !"
 
+#     def fullName(self):
+#         return f"{self.__brand} {self.model}"
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand , model)
+#         self.battery_size = battery_size
+        
+# my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+# print(my_tesla.fullName(),my_tesla.battery_size)
+# print(my_tesla.get_brand())
 
 
 # Q38. Polymorphism
 # Problem: Demonstrate polymorphism by defining a method fuel_type in both Car and ElectricCar classes,
 #  but with different behaviors.
 # Ans:38
+# class Car:
+#     def __init__(self,brand, model):
+        
+#         self.__brand = brand
+#         self.model = model
+    
+#     def get_brand(self):
+#         return self.__brand + " !"
+
+#     def fullName(self):
+#         return f"{self.__brand} {self.model}"
+
+#     def fuel_type(self):
+#         return "Petrol or Diesel"
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand , model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electric Charge"
+
+# my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+# safari = Car("Tata","Safari")
+# print(my_tesla.fullName(),my_tesla.battery_size)
+# print(my_tesla.fuel_type())
+# print(safari.fullName())
+# print(safari.fuel_type())
 
 
 
 # Q39. Class Variables
 # Problem: Add a class variable to Car that keeps track of the number of cars created.
 # Ans:39
+# class Car:
+#     total_car = 0 
+#     def __init__(self,brand, model):
+        
+#         self.__brand = brand
+#         self.model = model
+#         Car.total_car += 1
+
+#     def get_brand(self):
+#         return self.__brand + " !"
+
+#     def fullName(self):
+#         return f"{self.__brand} {self.model}"
+
+#     def fuel_type(self):
+#         return "Petrol or Diesel"
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand , model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electric Charge"
+
+# my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+# safari = Car("Tata","Safari")
+# print(my_tesla.fullName(),my_tesla.battery_size)
+# print(my_tesla.fuel_type())
+# print(safari.fullName())
+# print(safari.fuel_type())
+# print(Car.total_car)
 
 
 
 # Q40. Static Method
 # Problem: Add a static method to the Car class that returns a general description of a car.
 # Ans:40
+# class Car:
+#     total_car = 0 
+#     def __init__(self,brand, model):
+        
+#         self.__brand = brand
+#         self.model = model
+#         Car.total_car += 1
+
+#     def get_brand(self):
+#         return self.__brand + " !"
+
+#     def fullName(self):
+#         return f"{self.__brand} {self.model}"
+
+#     def fuel_type(self):
+#         return "Petrol or Diesel"
+    
+#     @staticmethod
+#     def general_description():
+#         return "Cars are means of transport"
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand , model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electric Charge"
+
+# my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+# safari = Car("Tata","Safari")
+# print(my_tesla.fullName(),my_tesla.battery_size)
+# print(my_tesla.fuel_type())
+# print(safari.fullName())
+# print(safari.fuel_type())
+# print(Car.total_car)
+
+# print(Car.general_description())
 
 
 
 # Q41. Property Decorators
 # Problem: Use a property decorator in the Car class to make the model attribute read-only.
 # Ans:41
+class Car:
+    total_car = 0 
+    def __init__(self,brand, model):
+        
+        self.__brand = brand
+        self.__model = model
+        Car.total_car += 1
+
+    def get_brand(self):
+        return self.__brand + " !"
+
+    def fullName(self):
+        return f"{self.__brand} {self.__model}"
+
+    def fuel_type(self):
+        return "Petrol or Diesel"
+    
+    @staticmethod
+    def general_description():
+        return "Cars are means of transport"
+
+    @property
+    def model(self):
+        return self.__model
+
+class ElectricCar(Car):
+    def __init__(self, brand, model, battery_size):
+        super().__init__(brand , model)
+        self.battery_size = battery_size
+
+    def fuel_type(self):
+        return "Electric Charge"
+
+my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+safari = Car("Tata","Safari")
+print(my_tesla.fullName(),my_tesla.battery_size)
+print(my_tesla.fuel_type())
+print(safari.fullName())
+print(safari.fuel_type())
+print(Car.total_car)
+print(Car.general_description())
+print(my_tesla.model)
 
 
 
 # Q42. Class Inheritance and isinstance() Function
 # Problem: Demonstrate the use of isinstance() to check if my_tesla is an instance of Car and ElectricCar.
 # Ans:42
+
 
 
 
