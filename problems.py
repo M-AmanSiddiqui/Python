@@ -496,3 +496,89 @@
 #         return 1
 #     else:
 #         return n * factorial(n - 1)
+
+
+
+# Q34. Basic Class and Object
+# Problem: Create a Car class with attributes like brand and model. Then create an instance of this class.
+# Ans:34
+class Car:
+    brand = None
+    model = None
+my_car = Car()
+print(my_car)
+
+
+# Q35. Class Method and Self
+# Problem: Add a method to the Car class that displays the full name of the car (brand and model).
+# Ans:35
+
+
+# Q36. Inheritance
+# Problem: Create an ElectricCar class that inherits from the Car class and has an additional attribute battery_size.
+# Ans:36
+
+
+
+# Q37. Encapsulation
+# Problem: Modify the Car class to encapsulate the brand attribute, making it private,
+#  and provide a getter method for it.
+# Ans:37
+
+
+
+# Q38. Polymorphism
+# Problem: Demonstrate polymorphism by defining a method fuel_type in both Car and ElectricCar classes,
+#  but with different behaviors.
+# Ans:38
+
+
+
+# Q39. Class Variables
+# Problem: Add a class variable to Car that keeps track of the number of cars created.
+# Ans:39
+
+
+
+# Q40. Static Method
+# Problem: Add a static method to the Car class that returns a general description of a car.
+# Ans:40
+
+
+
+# Q41. Property Decorators
+# Problem: Use a property decorator in the Car class to make the model attribute read-only.
+# Ans:41
+
+
+
+# Q42. Class Inheritance and isinstance() Function
+# Problem: Demonstrate the use of isinstance() to check if my_tesla is an instance of Car and ElectricCar.
+# Ans:42
+
+
+
+
+# Q43. Multiple Inheritance
+# Problem: Create two classes Battery and Engine, and let the ElectricCar class inherit from both,
+#  demonstrating multiple inheritance.
+# Ans:43
+
+
+
+# Q44: Timing Function Execution
+# Problem: Write a decorator that measures the time a function takes to execute.
+# Ans:44
+
+
+
+# Q45: Debugging Function Calls
+# Problem: Create a decorator to print the function name and the values of its arguments every time the function is called.
+# Ans:45
+
+
+
+# Q46: Cache Return Values
+# Problem: Implement a decorator that caches the return values of a function, 
+# so that when it's called with the same arguments, the cached value is returned instead of re-executing the function.
+# Ans:46
