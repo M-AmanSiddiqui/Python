@@ -824,27 +824,40 @@
 # Q44: Timing Function Execution
 # Problem: Write a decorator that measures the time a function takes to execute.
 # Ans:44
-import time
+# import time
 
-def timer(func):
-    def wrapper(*args, **kwargs):
-        start = time.time()
-        result = func(*args,**kwargs)
-        end = time.time()
-        print(f"{func.__name__} ran in {end-start} time")
-        return result
-    return wrapper
+# def timer(func):
+#     def wrapper(*args, **kwargs):
+#         start = time.time()
+#         result = func(*args,**kwargs)
+#         end = time.time()
+#         print(f"{func.__name__} ran in {end-start} time")
+#         return result
+#     return wrapper
 
-@timer
-def example_function(n):
-    time.sleep(n)
-example_function(2)
+# @timer
+# def example_function(n):
+#     time.sleep(n)
+# example_function(2)
     
 
 
 # Q45: Debugging Function Calls
 # Problem: Create a decorator to print the function name and the values of its arguments every time the function is called.
 # Ans:45
+# def debug(func):
+#     def wrapper(*args, **kwargs):
+#         args_value = ', '.join(str(arg) for arg in args)
+#         kwargs_value = ', '.join(f"{k}={v}" for  k, v in kwargs.items())
+#         print(f"calling: {func.__name__} with args {args_value} aand kwargs {kwargs_value}")
+#         return func(*args, **kwargs)
+#     return wrapper
+
+# @debug
+# def greet(name, greeting="Hello"):
+#     print(f"{greeting}, {name}")
+
+# greet("chai" , greeting="hii")
 
 
 
@@ -852,3 +865,24 @@ example_function(2)
 # Problem: Implement a decorator that caches the return values of a function, 
 # so that when it's called with the same arguments, the cached value is returned instead of re-executing the function.
 # Ans:46
+# import time
+
+# def cache(func):
+#     cache_value = {}
+#     print(cache_value)
+#     def wrapper(*args):
+#         if args in cache_value:
+#             return cache_value[args]
+#         result = func(*args)
+#         cache_value[args] = result
+#         return result
+#     return wrapper
+# @cache
+# def long_runing_function(a, b):
+#     time.sleep(4)
+#     return a + b
+
+# print(long_runing_function(2,3))
+# print(long_runing_function(2,3))
+# print(long_runing_function(4,3))
+# print(long_runing_function(5,3))
