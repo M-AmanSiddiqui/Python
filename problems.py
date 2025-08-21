@@ -703,55 +703,98 @@
 # Q41. Property Decorators
 # Problem: Use a property decorator in the Car class to make the model attribute read-only.
 # Ans:41
-class Car:
-    total_car = 0 
-    def __init__(self,brand, model):
+# class Car:
+#     total_car = 0 
+#     def __init__(self,brand, model):
         
-        self.__brand = brand
-        self.__model = model
-        Car.total_car += 1
+#         self.__brand = brand
+#         self.__model = model
+#         Car.total_car += 1
 
-    def get_brand(self):
-        return self.__brand + " !"
+#     def get_brand(self):
+#         return self.__brand + " !"
 
-    def fullName(self):
-        return f"{self.__brand} {self.__model}"
+#     def fullName(self):
+#         return f"{self.__brand} {self.__model}"
 
-    def fuel_type(self):
-        return "Petrol or Diesel"
+#     def fuel_type(self):
+#         return "Petrol or Diesel"
     
-    @staticmethod
-    def general_description():
-        return "Cars are means of transport"
+#     @staticmethod
+#     def general_description():
+#         return "Cars are means of transport"
 
-    @property
-    def model(self):
-        return self.__model
+#     @property
+#     def model(self):
+#         return self.__model
 
-class ElectricCar(Car):
-    def __init__(self, brand, model, battery_size):
-        super().__init__(brand , model)
-        self.battery_size = battery_size
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand , model)
+#         self.battery_size = battery_size
 
-    def fuel_type(self):
-        return "Electric Charge"
+#     def fuel_type(self):
+#         return "Electric Charge"
 
-my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
-safari = Car("Tata","Safari")
-print(my_tesla.fullName(),my_tesla.battery_size)
-print(my_tesla.fuel_type())
-print(safari.fullName())
-print(safari.fuel_type())
-print(Car.total_car)
-print(Car.general_description())
-print(my_tesla.model)
+# my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+# safari = Car("Tata","Safari")
+# print(my_tesla.fullName(),my_tesla.battery_size)
+# print(my_tesla.fuel_type())
+# print(safari.fullName())
+# print(safari.fuel_type())
+# print(Car.total_car)
+# print(Car.general_description())
+# print(my_tesla.model)
 
 
 
 # Q42. Class Inheritance and isinstance() Function
 # Problem: Demonstrate the use of isinstance() to check if my_tesla is an instance of Car and ElectricCar.
 # Ans:42
+# class Car:
+#     total_car = 0 
+#     def __init__(self,brand, model):
+        
+#         self.__brand = brand
+#         self.__model = model
+#         Car.total_car += 1
 
+#     def get_brand(self):
+#         return self.__brand + " !"
+
+#     def fullName(self):
+#         return f"{self.__brand} {self.__model}"
+
+#     def fuel_type(self):
+#         return "Petrol or Diesel"
+    
+#     @staticmethod
+#     def general_description():
+#         return "Cars are means of transport"
+
+#     @property
+#     def model(self):
+#         return self.__model
+
+# class ElectricCar(Car):
+#     def __init__(self, brand, model, battery_size):
+#         super().__init__(brand , model)
+#         self.battery_size = battery_size
+
+#     def fuel_type(self):
+#         return "Electric Charge"
+
+# my_tesla = ElectricCar("Tesla", "Model S" , "85kWh")
+# safari = Car("Tata","Safari")
+# print(my_tesla.fullName(),my_tesla.battery_size)
+# print(my_tesla.fuel_type())
+# print(safari.fullName())
+# print(safari.fuel_type())
+# print(Car.total_car)
+# print(Car.general_description())
+# print(my_tesla.model)
+# print(isinstance(my_tesla,Car))
+# print(isinstance(my_tesla,ElectricCar))
 
 
 
@@ -760,7 +803,22 @@ print(my_tesla.model)
 # Problem: Create two classes Battery and Engine, and let the ElectricCar class inherit from both,
 #  demonstrating multiple inheritance.
 # Ans:43
+class Battery:
+    def battery_info(self):
+        return "This is Battery"
 
+class Engine:
+    def engine_info(self):
+        return "This is Engine"
+    
+class Electric_Car(Battery,Engine):
+     def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+
+my_tesla = Electric_Car("Tesla", "Model S")
+print(my_tesla.engine_info())
+print(my_tesla.battery_info())
 
 
 # Q44: Timing Function Execution
