@@ -803,28 +803,43 @@
 # Problem: Create two classes Battery and Engine, and let the ElectricCar class inherit from both,
 #  demonstrating multiple inheritance.
 # Ans:43
-class Battery:
-    def battery_info(self):
-        return "This is Battery"
+# class Battery:
+#     def battery_info(self):
+#         return "This is Battery"
 
-class Engine:
-    def engine_info(self):
-        return "This is Engine"
+# class Engine:
+#     def engine_info(self):
+#         return "This is Engine"
     
-class Electric_Car(Battery,Engine):
-     def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
+# class Electric_Car(Battery,Engine):
+#      def __init__(self, brand, model):
+#         self.brand = brand
+#         self.model = model
 
-my_tesla = Electric_Car("Tesla", "Model S")
-print(my_tesla.engine_info())
-print(my_tesla.battery_info())
+# my_tesla = Electric_Car("Tesla", "Model S")
+# print(my_tesla.engine_info())
+# print(my_tesla.battery_info())
 
 
 # Q44: Timing Function Execution
 # Problem: Write a decorator that measures the time a function takes to execute.
 # Ans:44
+import time
 
+def timer(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args,**kwargs)
+        end = time.time()
+        print(f"{func.__name__} ran in {end-start} time")
+        return result
+    return wrapper
+
+@timer
+def example_function(n):
+    time.sleep(n)
+example_function(2)
+    
 
 
 # Q45: Debugging Function Calls
