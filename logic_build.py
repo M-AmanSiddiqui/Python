@@ -1211,13 +1211,5 @@
 
 # Output: Prints each line lazily.
 
-# 160. Implement Observer Pattern in Python
-
-# Implement Subject and Observer classes. When subject state changes, all observers are notified.
-
-# Example:
-
-# Observer1 received update
-# Observer2 received update
 
 
