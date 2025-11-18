@@ -4,6 +4,11 @@
 # 1. Odd or Even Checker
 
 # 👉 Write a Python program that takes a number as input and checks whether it is odd or even.
+# user = int(input("Enter a number: "))
+# if user % 2 == 0:
+#     print("Even")
+# else:
+#     print("Odd")
 
 # Example Input: 7
 
@@ -12,6 +17,14 @@
 # 2. Largest of Three Numbers
 
 # 👉 Input three numbers from the user and find the largest one using conditional statements.
+# a = 5; b = 12; c = 9
+# if a > b and a > c:
+#     print(" 5 is Greater")
+# elif b > a and b > c:
+#     print("12 is Greatest")
+# else:
+#     print("9 is greatest")
+
 
 # Example Input: 5, 12, 9
 
@@ -20,6 +33,12 @@
 # 3. Factorial of a Number
 
 # 👉 Write a program to calculate the factorial of a given number using a loop.
+n = int(input("Enter: "))
+fact = 1
+for i in range(1,n + 1):
+    fact = fact * i
+    print("Factorial is:", fact)
+
 
 # Example Input: 5
 
