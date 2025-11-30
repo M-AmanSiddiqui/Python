@@ -57,3 +57,65 @@
 #         print("OverRipe")
 
     
+# 5) Weather Activity Suggestion
+
+# weather = input("Enter Weather: ")
+
+# if weather == "Sunny":
+#     print("Go for a walk")
+# elif weather == "Snowy":
+#     print("Build a snowman")
+
+# 6) Transportation Mode Selection
+
+# distance = int(input("Enter km: "))
+
+# if distance < 3:
+#     print("By Walk")
+# elif distance < 15:
+#     print("Bike")
+# elif distance > 15:
+#     print("Car")
+
+# 7) Coffee Customization
+
+# order_size = "Medium" 
+# extra_shot = True
+
+# if extra_shot:
+#     coffee = order_size + " coffee with an extra shot"
+# else:
+#     coffee = order_size + " coffee"
+# print("Order: ", coffee)
+
+# 8) Password Checker
+
+# password = input("Enter Your Password: ")
+
+# if len(password) < 6:
+#     print("Weak")
+# elif len(password) <= 10:
+#     print("Medium")
+# else:
+#     print("Strong")
+
+# 9) Leap Your Checker 
+
+# year = 2023
+
+# if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
+#     print("Leap year", year)
+# else:
+#     print("Not Leap Year",year)
+
+# 10) Pet Food Recommendation
+
+pet = input("Enter Your Pet: ")
+age = int(input("Enter Your Pet Age: "))
+
+if pet == "Dog" and age < 2:
+    print("Puppy Food")
+elif pet == "Cat" and age > 5:
+    print("Senior Cat Food")
+else:
+    print("Regular Food")
